@@ -1,11 +1,16 @@
 import React from "react";
+import "./Header.css";
 
 const Home = () => {
   return (
     <div className="header">
-      <div className="logo"></div>
-      <div className="headerTitle"></div>
-      <div className="headerBell"></div>
+      <div className="headerContainer">
+        <div className="logo">
+          <img src="Assets/Header/RentPG.jpg" />
+        </div>
+      </div>
     </div>
   );
 };
+
+export default Home;
