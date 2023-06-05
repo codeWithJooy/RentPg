@@ -6,6 +6,7 @@
   height: 60px;
   background: #006d77;
   padding: 5px 10px;
+  z-index: 100;
 }
 .footerContainer {
   display: flex;
