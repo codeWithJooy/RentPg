@@ -3,7 +3,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import Highlights from "../../Components/Home/Highlights/Highlights";
 import Quick from "../../Components/Home/Quick/Quick";
-
+import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
