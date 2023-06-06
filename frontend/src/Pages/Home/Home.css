@@ -16,3 +16,6 @@
   overflow-x: hidden;
   z-index: 12;
 }
+.homeContainer::-webkit-scrollbar {
+  display: none;
+}
