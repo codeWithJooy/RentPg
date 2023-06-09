@@ -5,7 +5,7 @@ import Splash from "./Pages/Splash/Splash";
 import GetStarted from "./Pages/GetStarted/GetStarted";
 import Home from "./Pages/Home/Home";
 import Property from "./Pages/Property/Propert";
-import AddUnit from "./Pages/Property/AddUnit/AddUnit";
+import Floors from "./Pages/Property/Floors/Floors";
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/get-started" component={GetStarted} />
         <Route path="/home" component={Home} />
         <Route path="/property" component={Property} />
-        <Route path="/property/add/unit" component={AddUnit} />
+        <Route path="/floor" component={Floors} />
       </Switch>
     </BrowserRouter>
   );

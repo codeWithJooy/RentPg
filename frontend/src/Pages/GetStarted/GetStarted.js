@@ -10,7 +10,7 @@ const GetStarted = () => {
           <img src="Assets/Logo/RentPG.jpg" />
         </div>
         <div className="topText">
-          <p>We Writw about RentPG to tell user about us.</p>
+          <p>We Write about RentPG to tell user about us.</p>
         </div>
       </div>
       <div className="startButton">
