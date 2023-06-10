@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   background-color: #edf6f9;
+  position: relative;
 }
 
 .floorUnit {
@@ -35,9 +36,43 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: 15px;
+  font-weight: bold;
 }
 .floorDelete img {
   width: 15px;
   height: 15px;
   margin-right: 10px;
+}
+.floorButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.floorUnitButton {
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.floorAdd {
+  position: fixed;
+  top: 0px;
+  left: 00px;
+  bottom: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1000001;
+}
+.floorAddUnit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 55vh;
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
