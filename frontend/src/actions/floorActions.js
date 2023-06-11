@@ -1,8 +1,8 @@
-import { FLOORS_ADDED } from "../actionTypes/floorActionsType";
+import { TOTAL_FLOORS_ADDED } from "../actionTypes/floorActionsType";
 
 export const setTotalFloors = (data) => {
   return {
-    type: FLOORS_ADDED,
+    type: TOTAL_FLOORS_ADDED,
     payload: data,
   };
 };

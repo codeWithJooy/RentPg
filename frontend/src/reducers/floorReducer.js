@@ -1,4 +1,4 @@
-import { FLOORS_ADDED } from "../actionTypes/floorActionsType";
+import { TOTAL_FLOORS_ADDED } from "../actionTypes/floorActionsType";
 
 const initial = {
   floorPresent: false,
@@ -6,7 +6,7 @@ const initial = {
 
 const floorReducer = (state = initial, action) => {
   switch (action.type) {
-    case FLOORS_ADDED:
+    case TOTAL_FLOORS_ADDED:
       return {
         ...state,
         totalFloors: action.payload,

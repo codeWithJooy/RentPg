@@ -1,1 +1,1 @@
-export const FLOORS_ADDED = "FLOORS_ADDED";
+export const TOTAL_FLOORS_ADDED = "TOTAL_FLOORS_ADDED";
