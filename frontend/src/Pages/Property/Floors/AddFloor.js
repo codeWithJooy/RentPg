@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Floors.css";
 
-const AddFloor = ({ setFloorDetails }) => {
+const AddFloor = ({ setFloorDetails, floorName }) => {
   const [roomActive, setRoomActive] = useState(false);
   const handleRoomActive = () => {
     setRoomActive(!roomActive);
@@ -11,7 +11,7 @@ const AddFloor = ({ setFloorDetails }) => {
     <div className="floorAdd">
       <div className="floorAddUnit">
         <div className="addUnitTop">
-          <p>Add Units to Ground Floor</p>
+          <p>Add Units to {floorName}</p>
           <img
             src="Assets/Footer/plus.png"
             onClick={() => setFloorDetails(false)}
@@ -54,11 +54,11 @@ const AddUnit = () => {
         </div>
         <div className="addQuantityUnit">
           <input type="text" />
-          <p>Sigle Sharing</p>
+          <p>Double Sharing</p>
         </div>
         <div className="addQuantityUnit">
           <input type="text" />
-          <p>Sigle Sharing</p>
+          <p>Triple Sharing</p>
         </div>
       </div>
       <button>Add Unit</button>

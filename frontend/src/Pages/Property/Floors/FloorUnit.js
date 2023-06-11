@@ -1,8 +1,10 @@
 import React from "react";
 
-const FloorUnit = ({ floorName, setFloorDetails }) => {
+const FloorUnit = ({ floorName, setFloorDetails, setFloorName }) => {
   const handleFloorDetails = () => {
+    setFloorName(floorName);
     setFloorDetails(true);
+    console.log(floorName);
   };
   return (
     <div className="floorUnit">

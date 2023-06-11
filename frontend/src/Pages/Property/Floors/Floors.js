@@ -7,6 +7,7 @@ import FloorUnit from "./FloorUnit";
 import AddFloor from "./AddFloor";
 const Floors = () => {
   const [floorDetails, setFloorDetails] = useState(false);
+  const [floorName, setFloorName] = useState("");
   const totalFloors = useSelector((state) => state.floor.totalFloors);
   let arr = [];
   for (let i = 0; i <= totalFloors; i++) {
@@ -24,9 +25,12 @@ const Floors = () => {
           floorName={data}
           key={key}
           setFloorDetails={setFloorDetails}
+          setFloorName={setFloorName}
         />
       ))}
-      {floorDetails && <AddFloor setFloorDetails={setFloorDetails} />}
+      {floorDetails && (
+        <AddFloor floorName={floorName} setFloorDetails={setFloorDetails} />
+      )}
       <Footer />
     </div>
   );
