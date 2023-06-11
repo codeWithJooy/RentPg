@@ -1,14 +1,19 @@
 import { FLOORS_ADDED } from "../actionTypes/floorActionsType";
 
-const initial = {};
+const initial = {
+  floorPresent: false,
+};
 
 const floorReducer = (state = initial, action) => {
   switch (action.type) {
     case FLOORS_ADDED:
       return {
         ...state,
-        floors: action.payload,
+        totalFloors: action.payload,
+        floorPresent: true,
       };
+    default:
+      return state;
   }
 };
 

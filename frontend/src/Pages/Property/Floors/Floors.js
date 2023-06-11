@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import "./Floors.css";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer/Footer";
@@ -6,8 +7,9 @@ import FloorUnit from "./FloorUnit";
 import AddFloor from "./AddFloor";
 const Floors = () => {
   const [floorDetails, setFloorDetails] = useState(false);
+  const totalFloors = useSelector((state) => state.floor.totalFloors);
   let arr = [];
-  for (let i = 0; i <= 3; i++) {
+  for (let i = 0; i <= totalFloors; i++) {
     if (i == 0) {
       arr.push("Ground Floor");
     } else {

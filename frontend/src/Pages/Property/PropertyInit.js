@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Property.css";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { setTotalFloors } from "../../actions/floorActions";
 
 const PropertyInit = () => {
   const [floors, setFloors] = useState(0);
+  const floorPresent = useSelector((state) => state.floor.floorPresent);
+  const history = useHistory();
   const dispatch = useDispatch();
+  useEffect(() => {
+    if (floorPresent) {
+      history.push("/floor");
+    }
+  }, []);
   const handleFloors = () => {
     dispatch(setTotalFloors(floors));
+    history.push("/floor");
   };
   return (
     <div className="propertyContainer">
